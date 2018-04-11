@@ -21,12 +21,13 @@ Add the database name to config/config.json's "development" property:
     "dialect": "postgres"
   }
 ```
-For Windows users: replace "root" and null with your postgres user info
+For Windows users: replace "root" and null with your postgres user info.
 Mac users, delete those properties.
 
 run `node db-build.js` to generate your tables and populate the newly created tables with the dummy data.
 
 To add new models to the app, from the project root run something like this:
+
 ```bash
 sequelize model:create --name Foo --attributes foo_bar:string,baz:boolean,fizz:integer
 ```
